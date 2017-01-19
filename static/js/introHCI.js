@@ -20,5 +20,7 @@ function initializePage() {
 
 function projectClick(e){
 	e.preventDefault();
-	$(this).css("background-color", "#7fff00");
+	var projectTitle = $(this).find("p").text();
+	var jumbotronHeader = $(".jumbotron h1");
+	jumbotronHeader.text(projectTitle);
 }
